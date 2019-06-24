@@ -1,0 +1,10 @@
+<h3>Editing a project</h3>
+<%= form_for(@project) do |f| %>
+<label>Name: <label><br>
+<%= f.text_field :name,:value=>"#{@project.name}"%><br>
+
+<label>Industry: </label><br>
+<%= f.text_field :industry, :value=>"#{@project.industry}" %><br>
+
+<%= f.submit %>
+<% end %>

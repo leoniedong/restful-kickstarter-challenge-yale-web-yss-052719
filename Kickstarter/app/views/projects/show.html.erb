@@ -1,0 +1,5 @@
+<p>Name: <%= @project.name %></p>
+<p>Industry: <%= @project.industry %></p>
+<%= form_tag project_path(@project.id), method:"delete" do%>
+  <%= submit_tag "Delete #{@project.name}"%>
+  <% end %>
